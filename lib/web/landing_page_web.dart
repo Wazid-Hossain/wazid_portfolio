@@ -20,8 +20,13 @@ class _LandingPageWebState extends State<LandingPageWeb> {
         centerTitle: true,
         iconTheme: IconThemeData(size: 25, color: Colors.black),
         title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             TabsWeb('Home'),
+            TabsWeb('Works'),
+            TabsWeb('Blog'),
+            TabsWeb('About'),
+            TabsWeb('Contact'),
           ],
         ),
       ),

@@ -13,11 +13,43 @@ class _TabsWebState extends State<TabsWeb> {
   bool isSelected = false;
   @override
   Widget build(BuildContext context) {
+    // for 'home' text hover used MouseRegion who return a function whice are (_) { and for change the state use setstate({})
     return MouseRegion(
-      child: Text(
-        widget.title,
-        style: GoogleFonts.oswald(
-            color: Colors.black, fontSize: 23.0, fontWeight: FontWeight.bold),
+      onEnter: (_) {
+        setState(() {
+          isSelected = true;
+        });
+        print('Entered');
+      },
+      onExit: (_) {
+        setState(() {
+          isSelected = false;
+        });
+        print('Exited');
+      },
+      // For Animated the 'Home' Text warped with AnimatedDefaultTextStyle widget
+      child: AnimatedDefaultTextStyle(
+        duration: const Duration(microseconds: 100),
+        curve: Curves.elasticIn,
+        style: isSelected
+            ? GoogleFonts.oswald(
+                shadows: [
+                  Shadow(
+                    color: Colors.black,
+                    offset: Offset(0, -8),
+                  ),
+                ],
+                color: Colors.black,
+                fontSize: 30.0,
+                decoration: TextDecoration.underline,
+                decorationThickness: 1,
+                decorationColor: Colors.black,
+              )
+            : GoogleFonts.oswald(
+                color: Colors.black,
+                fontSize: 23.0,
+              ),
+        child: Text(widget.title),
       ),
     );
   }
