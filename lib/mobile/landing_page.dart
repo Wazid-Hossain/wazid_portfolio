@@ -17,7 +17,7 @@ class _LandingPageMobileState extends State<LandingPageMobile> {
         title: Text(
           'Home Page',
           style: TextStyle(
-              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 15),
+              fontWeight: FontWeight.bold, color: Colors.white, fontSize: 15),
         ),
       ),
     );

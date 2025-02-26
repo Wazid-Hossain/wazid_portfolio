@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wazid_p/components.dart';
 
 class LandingPageWeb extends StatefulWidget {
   const LandingPageWeb({super.key});
@@ -13,11 +14,8 @@ class _LandingPageWebState extends State<LandingPageWeb> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text(
-          'Home',
-          style: TextStyle(
-              color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),
-        ),
+        elevation: 0.0,
+        title: TabsWeb(),
       ),
     );
   }
