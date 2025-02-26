@@ -42,6 +42,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
         Container(
           height: heightDevice - 56,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Column(
                 children: [
