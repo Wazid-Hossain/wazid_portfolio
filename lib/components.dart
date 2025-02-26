@@ -10,11 +10,15 @@ class TabsWeb extends StatefulWidget {
 }
 
 class _TabsWebState extends State<TabsWeb> {
+  bool isSelected = false;
   @override
   Widget build(BuildContext context) {
-    return Text(widget.title,
+    return MouseRegion(
+      child: Text(
+        widget.title,
         style: GoogleFonts.oswald(
-          color: Colors.black,
-        ));
+            color: Colors.black, fontSize: 23.0, fontWeight: FontWeight.bold),
+      ),
+    );
   }
 }
