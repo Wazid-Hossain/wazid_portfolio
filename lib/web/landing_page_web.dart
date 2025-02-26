@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:wazid_p/components.dart';
 
 class LandingPageWeb extends StatefulWidget {
@@ -11,6 +12,7 @@ class LandingPageWeb extends StatefulWidget {
 class _LandingPageWebState extends State<LandingPageWeb> {
   @override
   Widget build(BuildContext context) {
+    var heightDevice = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Colors.white,
       drawer: Drawer(),
@@ -36,17 +38,50 @@ class _LandingPageWebState extends State<LandingPageWeb> {
           ],
         ),
       ),
-      body: CircleAvatar(
-        radius: 103.0,
-        backgroundColor: Colors.black,
-        child: CircleAvatar(
-          // to fit the image in circle use backgroundImage
+      body: ListView(children: [
+        Container(
+          height: heightDevice - 56,
+          child: Row(
+            children: [
+              Column(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.tealAccent,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20),
+                        bottomRight: Radius.circular(20),
+                      ),
+                    ),
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                    child: Text(
+                      'Hello I am',
+                      style: GoogleFonts.openSans(
+                          fontSize: 15, fontWeight: FontWeight.bold),
+                    ),
+                  )
+                ],
+              ),
+              CircleAvatar(
+                radius: 147.0,
+                backgroundColor: Colors.tealAccent,
+                child: CircleAvatar(
+                  radius: 143.0,
+                  backgroundColor: Colors.black,
+                  child: CircleAvatar(
+                    // to fit the image in circle use backgroundImage
 
-          radius: 100,
-          backgroundColor: Colors.white,
-          backgroundImage: AssetImage('assets/wazid-circle.png'),
+                    radius: 140,
+                    backgroundColor: Colors.white,
+                    backgroundImage: AssetImage('assets/wazid-circle.png'),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
-      ),
+      ]),
     );
   }
 }
