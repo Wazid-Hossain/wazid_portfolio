@@ -37,7 +37,15 @@ class _LandingPageWebState extends State<LandingPageWeb> {
         ),
       ),
       body: CircleAvatar(
-        child: Image.asset('assets/wazid.jpeg'),
+        radius: 103.0,
+        backgroundColor: Colors.black,
+        child: CircleAvatar(
+          // to fit the image in circle use backgroundImage
+
+          radius: 100,
+          backgroundColor: Colors.white,
+          backgroundImage: AssetImage('assets/wazid-circle.png'),
+        ),
       ),
     );
   }
