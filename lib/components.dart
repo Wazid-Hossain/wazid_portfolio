@@ -35,7 +35,7 @@ class _TabsWebState extends State<TabsWeb> {
             ? GoogleFonts.oswald(
                 shadows: [
                   Shadow(
-                    color: Colors.black,
+                    color: Colors.transparent,
                     offset: Offset(0, -8),
                   ),
                 ],

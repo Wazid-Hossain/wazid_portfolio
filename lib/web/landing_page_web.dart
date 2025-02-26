@@ -15,20 +15,29 @@ class _LandingPageWebState extends State<LandingPageWeb> {
       backgroundColor: Colors.white,
       drawer: Drawer(),
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.white,
         elevation: 0.0,
         centerTitle: true,
         iconTheme: IconThemeData(size: 25, color: Colors.black),
         title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            //for space between text use Spacer();
+            Spacer(flex: 3),
             TabsWeb('Home'),
+            Spacer(),
             TabsWeb('Works'),
+            Spacer(),
             TabsWeb('Blog'),
+            Spacer(),
             TabsWeb('About'),
+            Spacer(),
             TabsWeb('Contact'),
+            Spacer(),
           ],
         ),
+      ),
+      body: CircleAvatar(
+        child: Image.asset('assets/wazid.jpeg'),
       ),
     );
   }
