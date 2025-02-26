@@ -10,6 +10,16 @@ class LandingPageMobile extends StatefulWidget {
 class _LandingPageMobileState extends State<LandingPageMobile> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        centerTitle: true,
+        title: Text(
+          'Home Page',
+          style: TextStyle(
+              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 15),
+        ),
+      ),
+    );
   }
 }
