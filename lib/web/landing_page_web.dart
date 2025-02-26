@@ -15,7 +15,11 @@ class _LandingPageWebState extends State<LandingPageWeb> {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         elevation: 0.0,
-        title: TabsWeb(),
+        title: Row(
+          children: [
+            TabsWeb('Home'),
+          ],
+        ),
       ),
     );
   }

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TabsWeb extends StatefulWidget {
-  const TabsWeb({super.key});
+  final title;
+  const TabsWeb(this.title, {super.key});
 
   @override
   State<TabsWeb> createState() => _TabsWebState();
@@ -10,6 +12,9 @@ class TabsWeb extends StatefulWidget {
 class _TabsWebState extends State<TabsWeb> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Text(widget.title,
+        style: GoogleFonts.oswald(
+          color: Colors.black,
+        ));
   }
 }
