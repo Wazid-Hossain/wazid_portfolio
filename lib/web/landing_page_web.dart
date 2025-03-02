@@ -129,7 +129,19 @@ class _LandingPageWebState extends State<LandingPageWeb> {
           Container(
             height: heightDevice / 1.5,
             child: Column(
-              children: [SansBold('About Me', 30)],
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SansBold('About Me', 40),
+                SizedBox(height: 10),
+                Sans(
+                    "As a skilled Flutter Developer, I specialize in building high-performance, visually appealing, and responsive cross-platform mobile and web applications. With a passion for clean code and user-centric design, I have successfully delivered a variety of projects across industries, ranging from e-commerce to health and fitness. My expertise lies in leveraging the full potential of Flutter's capabilities to create seamless and scalable applications for both Android and iOS platforms.",
+                    15),
+                SizedBox(height: 10),
+                Sans(
+                    'With a deep understanding of Dart, state management techniques (such as Provider, Riverpod, and Bloc), and integrations with REST APIs and Firebase, I am committed to delivering solutions that meet user needs while ensuring smooth performance and robust functionality. Additionally, I prioritize maintaining a collaborative approach, working effectively with UI/UX designers, backend developers, and project managers to bring ideas to life.',
+                    15),
+              ],
             ),
           )
         ],
