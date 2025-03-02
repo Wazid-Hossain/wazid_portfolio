@@ -73,24 +73,36 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                         Icon(
                           Icons.email,
                         ),
+                        SizedBox(
+                          width: 20,
+                        ),
                         Sans('mwh.wajid96@gmail.com', 15),
-                        SizedBox(
-                          width: 20,
-                        ),
+                      ],
+                    ),
+                    SizedBox(height: 10),
+                    Row(
+                      children: [
                         Icon(
-                          Icons.call,
+                          Icons.phone,
                         ),
-                        Sans('+8801784880361', 15),
                         SizedBox(
                           width: 20,
                         ),
+                        Sans('+880 1784 880 361', 15),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      children: [
                         Icon(
                           Icons.location_on,
                         ),
-                        Sans('Dhaka', 15),
                         SizedBox(
                           width: 20,
-                        )
+                        ),
+                        Sans('Dhaka, Bangladesh', 15),
                       ],
                     )
                   ],
