@@ -47,19 +47,23 @@ class _LandingPageWebState extends State<LandingPageWeb> {
               children: [
                 Column(
                   children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.tealAccent,
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(20),
-                          topRight: Radius.circular(20),
-                          bottomRight: Radius.circular(20),
+                    Center(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.tealAccent,
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(20),
+                            topRight: Radius.circular(20),
+                            bottomRight: Radius.circular(20),
+                          ),
                         ),
+                        padding:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                        child: SansBold('Hello i am', 15),
                       ),
-                      padding:
-                          EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                      child: SansBold('Hello i am', 15),
                     ),
+                    SizedBox(height: 10),
+                    SansBold('Wazid Hossain', 50)
                   ],
                 ),
                 CircleAvatar(
