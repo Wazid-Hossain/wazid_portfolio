@@ -69,6 +69,7 @@ class SansBold extends StatelessWidget {
   }
 }
 
+// create a new class named sans who return a text widget with google font open sans and size and we used this class in the landing page web.
 class Sans extends StatelessWidget {
   final text;
   final size;

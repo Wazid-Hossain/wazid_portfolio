@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:wazid_p/components.dart';
-import 'package:wazid_p/components/SansBold.dart';
 
 class LandingPageWeb extends StatefulWidget {
   const LandingPageWeb({super.key});
@@ -141,6 +140,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                 Sans(
                     'With a deep understanding of Dart, state management techniques (such as Provider, Riverpod, and Bloc), and integrations with REST APIs and Firebase, I am committed to delivering solutions that meet user needs while ensuring smooth performance and robust functionality. Additionally, I prioritize maintaining a collaborative approach, working effectively with UI/UX designers, backend developers, and project managers to bring ideas to life.',
                     15),
+                Sans('Flutter', 20)
               ],
             ),
           )
