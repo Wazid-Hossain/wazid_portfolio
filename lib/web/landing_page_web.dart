@@ -46,6 +46,8 @@ class _LandingPageWebState extends State<LandingPageWeb> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Center(
                       child: Container(
@@ -63,7 +65,34 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                       ),
                     ),
                     SizedBox(height: 10),
-                    SansBold('Wazid Hossain', 50)
+                    SansBold('Wazid Hossain', 50),
+                    Sans('Flutter Devloper', 30),
+                    SizedBox(height: 10),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.email,
+                        ),
+                        Sans('mwh.wajid96@gmail.com', 15),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Icon(
+                          Icons.call,
+                        ),
+                        Sans('+8801784880361', 15),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Icon(
+                          Icons.location_on,
+                        ),
+                        Sans('Dhaka', 15),
+                        SizedBox(
+                          width: 20,
+                        )
+                      ],
+                    )
                   ],
                 ),
                 CircleAvatar(
