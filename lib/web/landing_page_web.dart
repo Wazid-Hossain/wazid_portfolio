@@ -125,6 +125,13 @@ class _LandingPageWebState extends State<LandingPageWeb> {
               ],
             ),
           ),
+          // Second Page BeginSS
+          Container(
+            height: heightDevice / 1.5,
+            child: Column(
+              children: [SansBold('About Me', 30)],
+            ),
+          )
         ],
       ),
     );
