@@ -140,7 +140,15 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                 Sans(
                     'With a deep understanding of Dart, state management techniques (such as Provider, Riverpod, and Bloc), and integrations with REST APIs and Firebase, I am committed to delivering solutions that meet user needs while ensuring smooth performance and robust functionality. Additionally, I prioritize maintaining a collaborative approach, working effectively with UI/UX designers, backend developers, and project managers to bring ideas to life.',
                     15),
-                Sans('Flutter', 20)
+                Container(
+                  child: Sans('Flutter', 20),
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                          color: Colors.tealAccent,
+                          width: 2,
+                          style: BorderStyle.solid),
+                      borderRadius: BorderRadius.circular(10)),
+                ),
               ],
             ),
           )
