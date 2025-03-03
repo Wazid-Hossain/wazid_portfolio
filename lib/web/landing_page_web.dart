@@ -324,6 +324,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                         ),
                       ),
                     )
+                    // end of blog card
                   ],
                 )
               ],
