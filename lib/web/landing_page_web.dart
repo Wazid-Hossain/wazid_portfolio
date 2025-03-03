@@ -249,6 +249,52 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                           SansBold('Web Devlopment', 20),
                         ],
                       ),
+                    ),
+// Web Devlopment card end,
+
+                    Card(
+                      elevation: 30,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      shadowColor: Colors.tealAccent,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'assets/app.png',
+                            height: 200,
+                            width: 200,
+                            fit: BoxFit.contain,
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          SansBold('App Devlopment', 20),
+                        ],
+                      ),
+                    ),
+// App Devlopment card end
+                    Card(
+                      elevation: 30,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      shadowColor: Colors.tealAccent,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'assets/firebase.png',
+                            height: 200,
+                            width: 200,
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          SansBold('Web Devlopment', 20),
+                        ],
+                      ),
                     )
                   ],
                 )
