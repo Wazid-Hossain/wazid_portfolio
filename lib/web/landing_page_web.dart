@@ -200,15 +200,17 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                             padding: EdgeInsets.all(7.0),
                           ),
                           SizedBox(width: 7),
-                          Container(
-                            child: Sans('Web', 20),
-                            decoration: BoxDecoration(
-                                border: Border.all(
-                                    color: Colors.tealAccent,
-                                    width: 2,
-                                    style: BorderStyle.solid),
-                                borderRadius: BorderRadius.circular(5)),
-                            padding: EdgeInsets.all(7.0),
+                          Flexible(
+                            child: Container(
+                              child: Sans('Web', 20),
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      color: Colors.tealAccent,
+                                      width: 2,
+                                      style: BorderStyle.solid),
+                                  borderRadius: BorderRadius.circular(5)),
+                              padding: EdgeInsets.all(7.0),
+                            ),
                           ),
                         ],
                       )
@@ -293,31 +295,33 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                           SizedBox(
                             height: 10,
                           ),
-                          SansBold('Firebase Autentication', 20),
+                          SansBold('Back-End Devlopment', 15),
                         ],
                       ),
                     ),
                     // Firebase card end
-                    Card(
-                      elevation: 30,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      shadowColor: Colors.tealAccent,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            'assets/blog.jpg',
-                            height: 200,
-                            width: 200,
-                            fit: BoxFit.contain,
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          SansBold('Blog', 20),
-                        ],
+                    Flexible(
+                      child: Card(
+                        elevation: 30,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        shadowColor: Colors.tealAccent,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Image.asset(
+                              'assets/blog.jpg',
+                              height: 200,
+                              width: 200,
+                              fit: BoxFit.contain,
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            SansBold('Blog', 20),
+                          ],
+                        ),
                       ),
                     )
                   ],
