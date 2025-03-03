@@ -225,11 +225,16 @@ class _LandingPageWebState extends State<LandingPageWeb> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                SansBold('What i Do?', 40),
+                SansBold('What I Do?', 40),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Card(
+                      elevation: 30,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      shadowColor: Colors.tealAccent,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -238,6 +243,10 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                             height: 200,
                             width: 200,
                           ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          SansBold('Web Devlopment', 20),
                         ],
                       ),
                     )
