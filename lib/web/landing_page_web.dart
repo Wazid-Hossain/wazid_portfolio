@@ -288,11 +288,35 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                             'assets/firebase.png',
                             height: 200,
                             width: 200,
+                            fit: BoxFit.contain,
                           ),
                           SizedBox(
                             height: 10,
                           ),
-                          SansBold('Web Devlopment', 20),
+                          SansBold('Firebase Autentication', 20),
+                        ],
+                      ),
+                    ),
+                    // Firebase card end
+                    Card(
+                      elevation: 30,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      shadowColor: Colors.tealAccent,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'assets/blog.jpg',
+                            height: 200,
+                            width: 200,
+                            fit: BoxFit.contain,
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          SansBold('Blog', 20),
                         ],
                       ),
                     )
