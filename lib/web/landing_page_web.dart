@@ -133,6 +133,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                   'assets/web.jpg',
                   height: heightDevice / 1.7,
                 ),
+                // Expanded is used to take the remaining space and fixed the overflow error
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -147,16 +148,64 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                       Sans(
                           'I have been developing mobile applications for over 1 years and have a strong understanding of Flutter, Dart, and Firebase.',
                           15),
-                      Container(
-                        child: Sans('Flutter', 20),
-                        decoration: BoxDecoration(
-                            border: Border.all(
-                                color: Colors.tealAccent,
-                                width: 2,
-                                style: BorderStyle.solid),
-                            borderRadius: BorderRadius.circular(5)),
-                        padding: EdgeInsets.all(7.0),
+                      SizedBox(
+                        height: 15,
                       ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Container(
+                            child: Sans('Flutter', 20),
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.tealAccent,
+                                    width: 2,
+                                    style: BorderStyle.solid),
+                                borderRadius: BorderRadius.circular(5)),
+                            padding: EdgeInsets.all(7.0),
+                          ),
+                          Container(
+                            child: Sans('Firebase', 20),
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.tealAccent,
+                                    width: 2,
+                                    style: BorderStyle.solid),
+                                borderRadius: BorderRadius.circular(5)),
+                            padding: EdgeInsets.all(7.0),
+                          ),
+                          Container(
+                            child: Sans('Android', 20),
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.tealAccent,
+                                    width: 2,
+                                    style: BorderStyle.solid),
+                                borderRadius: BorderRadius.circular(5)),
+                            padding: EdgeInsets.all(7.0),
+                          ),
+                          Container(
+                            child: Sans('IOS', 20),
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.tealAccent,
+                                    width: 2,
+                                    style: BorderStyle.solid),
+                                borderRadius: BorderRadius.circular(5)),
+                            padding: EdgeInsets.all(7.0),
+                          ),
+                          Container(
+                            child: Sans('Web', 20),
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.tealAccent,
+                                    width: 2,
+                                    style: BorderStyle.solid),
+                                borderRadius: BorderRadius.circular(5)),
+                            padding: EdgeInsets.all(7.0),
+                          ),
+                        ],
+                      )
                     ],
                   ),
                 ),
