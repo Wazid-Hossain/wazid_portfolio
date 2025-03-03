@@ -128,6 +128,8 @@ class _LandingPageWebState extends State<LandingPageWeb> {
           Container(
             height: heightDevice / 1.5,
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Image.asset(
                   'assets/web.jpg',
@@ -164,6 +166,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                                 borderRadius: BorderRadius.circular(5)),
                             padding: EdgeInsets.all(7.0),
                           ),
+                          SizedBox(width: 7),
                           Container(
                             child: Sans('Firebase', 20),
                             decoration: BoxDecoration(
@@ -174,6 +177,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                                 borderRadius: BorderRadius.circular(5)),
                             padding: EdgeInsets.all(7.0),
                           ),
+                          SizedBox(width: 7),
                           Container(
                             child: Sans('Android', 20),
                             decoration: BoxDecoration(
@@ -184,6 +188,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                                 borderRadius: BorderRadius.circular(5)),
                             padding: EdgeInsets.all(7.0),
                           ),
+                          SizedBox(width: 7),
                           Container(
                             child: Sans('IOS', 20),
                             decoration: BoxDecoration(
@@ -194,6 +199,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                                 borderRadius: BorderRadius.circular(5)),
                             padding: EdgeInsets.all(7.0),
                           ),
+                          SizedBox(width: 7),
                           Container(
                             child: Sans('Web', 20),
                             decoration: BoxDecoration(
@@ -211,7 +217,9 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                 ),
               ],
             ),
+            // end of second page
           )
+          // third page begin
         ],
       ),
     );
