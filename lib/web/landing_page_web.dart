@@ -218,8 +218,34 @@ class _LandingPageWebState extends State<LandingPageWeb> {
               ],
             ),
             // end of second page
-          )
+          ),
           // third page begin
+          Container(
+            height: heightDevice / 1.3,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                SansBold('What i Do?', 40),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Card(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'assets/webL.png',
+                            height: 200,
+                            width: 200,
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                )
+              ],
+            ),
+          )
         ],
       ),
     );
