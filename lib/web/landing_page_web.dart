@@ -224,84 +224,18 @@ class _LandingPageWebState extends State<LandingPageWeb> {
           // third page begin
           Container(
             height: heightDevice / 1.3,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                SansBold('What I Do?', 40),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Card(
-                      elevation: 30,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      shadowColor: Colors.tealAccent,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            'assets/webL.png',
-                            height: 200,
-                            width: 200,
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          SansBold('Web Devlopment', 20),
-                        ],
-                      ),
-                    ),
-// Web Devlopment card end,
-
-                    Card(
-                      elevation: 30,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      shadowColor: Colors.tealAccent,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            'assets/app.png',
-                            height: 200,
-                            width: 200,
-                            fit: BoxFit.contain,
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          SansBold('App Devlopment', 20),
-                        ],
-                      ),
-                    ),
-// App Devlopment card end
-                    Card(
-                      elevation: 30,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      shadowColor: Colors.tealAccent,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            'assets/firebase.png',
-                            height: 200,
-                            width: 200,
-                            fit: BoxFit.contain,
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          SansBold('Back-End Devlopment', 15),
-                        ],
-                      ),
-                    ),
-                    // Firebase card end
-                    Flexible(
-                      child: Card(
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SansBold('What I Do?', 40),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Card(
                         elevation: 30,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15),
@@ -311,7 +245,30 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Image.asset(
-                              'assets/blog.jpg',
+                              'assets/webL.png',
+                              height: 200,
+                              width: 200,
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            SansBold('Web Devlopment', 20),
+                          ],
+                        ),
+                      ),
+                      // Web Devlopment card end,
+
+                      Card(
+                        elevation: 30,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        shadowColor: Colors.tealAccent,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Image.asset(
+                              'assets/app.png',
                               height: 200,
                               width: 200,
                               fit: BoxFit.contain,
@@ -319,16 +276,76 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                             SizedBox(
                               height: 10,
                             ),
-                            SansBold('Blog', 20),
+                            SansBold('App Devlopment', 20),
                           ],
                         ),
                       ),
-                    ),
-                    // end of blog card
-                    // end of third page
-                    // start of fourth page begin (Contact)
-                  ],
-                )
+                      // App Devlopment card end
+                      Card(
+                        elevation: 30,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        shadowColor: Colors.tealAccent,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Image.asset(
+                              'assets/firebase.png',
+                              height: 200,
+                              width: 200,
+                              fit: BoxFit.contain,
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            SansBold('Back-End Devlopment', 15),
+                          ],
+                        ),
+                      ),
+                      // Firebase card end
+                      Flexible(
+                        child: Card(
+                          elevation: 30,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          shadowColor: Colors.tealAccent,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Image.asset(
+                                'assets/blog.jpg',
+                                height: 200,
+                                width: 200,
+                                fit: BoxFit.contain,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              SansBold('Blog', 20),
+                            ],
+                          ),
+                        ),
+                      ),
+                      // end of blog card
+                      // end of third page
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  //start of fourth page begin (Contact)
+                ],
+              ),
+            ),
+          ),
+
+          Container(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                SansBold('Contact', 40),
               ],
             ),
           )
