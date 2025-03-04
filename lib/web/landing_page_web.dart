@@ -349,7 +349,14 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                   children: [
                     Column(
                       children: [
-                        SizedBox(width: 350, child: TextFormField()),
+                        SizedBox(
+                            width: 350,
+                            child: TextFormField(
+                              decoration: InputDecoration(
+                                  enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Colors.teal),
+                              )),
+                            )),
                       ],
                     )
                   ],
