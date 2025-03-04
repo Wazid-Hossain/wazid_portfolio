@@ -336,6 +336,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
               ),
             ),
           ),
+          // end of what i do page
           // fourth page begin
           Container(
             height: heightDevice,
@@ -343,6 +344,16 @@ class _LandingPageWebState extends State<LandingPageWeb> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 SansBold('Contact Me', 40),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      children: [
+                        SizedBox(width: 350, child: TextFormField()),
+                      ],
+                    )
+                  ],
+                )
               ],
             ),
           )
