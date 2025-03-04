@@ -353,9 +353,13 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                             width: 350,
                             child: TextFormField(
                               decoration: InputDecoration(
-                                  enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.teal),
-                              )),
+                                enabledBorder: OutlineInputBorder(
+                                  borderSide: BorderSide(color: Colors.teal),
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(10),
+                                  ),
+                                ),
+                              ),
                             )),
                       ],
                     )
