@@ -323,8 +323,10 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                           ],
                         ),
                       ),
-                    )
+                    ),
                     // end of blog card
+                    // end of third page
+                    // start of fourth page begin (Contact)
                   ],
                 )
               ],
