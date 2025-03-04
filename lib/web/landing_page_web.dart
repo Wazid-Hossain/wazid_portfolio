@@ -124,7 +124,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
               ],
             ),
           ),
-          // Second Page BeginSS
+          // Second Page Begin
           Container(
             height: heightDevice / 1.5,
             child: Row(
@@ -219,8 +219,8 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                 ),
               ],
             ),
-            // end of second page
           ),
+          // end of second page
           // third page begin
           Container(
             height: heightDevice / 1.3,
@@ -332,20 +332,17 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                       // end of third page
                     ],
                   ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  //start of fourth page begin (Contact)
                 ],
               ),
             ),
           ),
-
+          // fourth page begin
           Container(
+            height: heightDevice,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                SansBold('Contact', 40),
+                SansBold('Contact Me', 40),
               ],
             ),
           )
