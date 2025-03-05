@@ -370,7 +370,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                                           Radius.circular(10),
                                         ),
                                       ),
-                                      hintText: 'Enter Your Full Name')),
+                                      hintText: 'Enter Your Name')),
                             ),
                           ],
                         ),
