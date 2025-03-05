@@ -84,22 +84,33 @@ class Sans extends StatelessWidget {
   }
 }
 
+// create a new class named TextFrom who return a column widget with children and we used this class in the landing page web.
+
 class TextFrom extends StatelessWidget {
   final heading;
-  const TextFrom({super.key, @required this.heading});
+  final width;
+  final hinttext;
+  final maxline;
+  const TextFrom(
+      {super.key,
+      @required this.heading,
+      @required this.width,
+      @required this.hinttext,
+      this.maxline});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Sans('Your Name', 16),
+        Sans(heading, 16),
         SizedBox(height: 10),
         Column(
           children: [
             SizedBox(
-              width: 350,
+              width: width,
               child: TextFormField(
+                maxLines: maxline == null ? null : maxline,
                 decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.teal),
@@ -113,7 +124,7 @@ class TextFrom extends StatelessWidget {
                       Radius.circular(10),
                     ),
                   ),
-                  hintText: 'Enter Your Name',
+                  hintText: hinttext,
                   hintStyle: GoogleFonts.poppins(fontSize: 16),
                 ),
               ),

@@ -348,7 +348,14 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    TextFrom(heading: 'Your Name'),
+                    TextFrom(
+                        heading: 'Your Name',
+                        width: 350,
+                        hinttext: 'Enter Your Name'),
+                    TextFrom(
+                        heading: 'Your Mail',
+                        width: 350,
+                        hinttext: 'Enter Your Mail')
                   ],
                 )
               ],
