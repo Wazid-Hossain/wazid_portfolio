@@ -305,30 +305,30 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                         ),
                       ),
                       // Firebase card end
-                      Flexible(
-                        child: Card(
-                          elevation: 30,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                          shadowColor: Colors.tealAccent,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Image.asset(
-                                'assets/blog.jpg',
-                                height: 200,
-                                width: 200,
-                                fit: BoxFit.contain,
-                              ),
-                              SizedBox(
-                                height: 10,
-                              ),
-                              SansBold('Blog', 20),
-                            ],
-                          ),
-                        ),
-                      ),
+                      // Flexible(
+                      //   child: Card(
+                      //     elevation: 30,
+                      //     shape: RoundedRectangleBorder(
+                      //       borderRadius: BorderRadius.circular(15),
+                      //     ),
+                      //     shadowColor: Colors.tealAccent,
+                      //     child: Column(
+                      //       mainAxisAlignment: MainAxisAlignment.start,
+                      //       children: [
+                      //         Image.asset(
+                      //           'assets/blog.jpg',
+                      //           height: 200,
+                      //           width: 200,
+                      //           fit: BoxFit.contain,
+                      //         ),
+                      //         SizedBox(
+                      //           height: 10,
+                      //         ),
+                      //         SansBold('Blog', 20),
+                      //       ],
+                      //     ),
+                      //   ),
+                      // ),
                       // end of blog card
                       // end of third page
                     ],
@@ -350,30 +350,30 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                   children: [
                     Column(
                       children: [
-                        Text('Your Name'),
+                        Sans('Your Name', 16),
+                        SizedBox(height: 10),
                         Column(
                           children: [
                             SizedBox(
                               width: 350,
                               child: TextFormField(
-                                  decoration: InputDecoration(
-                                      enabledBorder: OutlineInputBorder(
-                                        borderSide:
-                                            BorderSide(color: Colors.teal),
-                                        borderRadius: BorderRadius.all(
-                                          Radius.circular(10),
-                                        ),
-                                      ),
-                                      focusedBorder: OutlineInputBorder(
-                                        borderSide:
-                                            BorderSide(color: Colors.teal),
-                                        borderRadius: BorderRadius.all(
-                                          Radius.circular(10),
-                                        ),
-                                      ),
-                                      hintText: 'Enter Your Name',
-                                      hintStyle:
-                                          GoogleFonts.poppins(fontSize: 16))),
+                                decoration: InputDecoration(
+                                  enabledBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.teal),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    ),
+                                  ),
+                                  focusedBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.teal),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10),
+                                    ),
+                                  ),
+                                  hintText: 'Enter Your Name',
+                                  hintStyle: GoogleFonts.poppins(fontSize: 16),
+                                ),
+                              ),
                             ),
                           ],
                         ),
