@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:wazid_p/components.dart';
 
 class LandingPageWeb extends StatefulWidget {
@@ -370,7 +371,9 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                                           Radius.circular(10),
                                         ),
                                       ),
-                                      hintText: 'Enter Your Name')),
+                                      hintText: 'Enter Your Name',
+                                      hintStyle:
+                                          GoogleFonts.poppins(fontSize: 16))),
                             ),
                           ],
                         ),
