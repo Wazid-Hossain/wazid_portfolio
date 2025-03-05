@@ -83,3 +83,37 @@ class Sans extends StatelessWidget {
     );
   }
 }
+
+class TextForm extends StatelessWidget {
+  final heading;
+  const TextForm({super.key, @required this.heading});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        SizedBox(
+          width: 350,
+          child: TextFormField(
+            decoration: InputDecoration(
+              enabledBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.teal),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(10),
+                ),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.teal),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(10),
+                ),
+              ),
+              hintText: 'Enter Your Name',
+              hintStyle: GoogleFonts.poppins(fontSize: 16),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}

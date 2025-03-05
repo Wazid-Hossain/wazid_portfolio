@@ -349,34 +349,11 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Sans('Your Name', 16),
                         SizedBox(height: 10),
-                        Column(
-                          children: [
-                            SizedBox(
-                              width: 350,
-                              child: TextFormField(
-                                decoration: InputDecoration(
-                                  enabledBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(color: Colors.teal),
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(10),
-                                    ),
-                                  ),
-                                  focusedBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(color: Colors.teal),
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(10),
-                                    ),
-                                  ),
-                                  hintText: 'Enter Your Name',
-                                  hintStyle: GoogleFonts.poppins(fontSize: 16),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
+                        TextForm(heading: 'First Name'),
                       ],
                     )
                   ],
