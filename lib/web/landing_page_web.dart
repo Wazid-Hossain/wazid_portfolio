@@ -348,14 +348,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Sans('Your Name', 16),
-                        SizedBox(height: 10),
-                        TextForm(heading: 'First Name'),
-                      ],
-                    )
+                    TextFrom(heading: 'Your Name'),
                   ],
                 )
               ],
