@@ -387,6 +387,19 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                       hinttext: 'Please Enter your Message',
                       maxline: 10,
                     ),
+                    SizedBox(
+                      height: 25,
+                    ),
+                    MaterialButton(
+                        elevation: 20,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        color: Colors.tealAccent,
+                        height: 60,
+                        minWidth: 200,
+                        child: SansBold('Submit', 20),
+                        onPressed: () {})
                   ],
                 )
               ],
