@@ -13,6 +13,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
   @override
   Widget build(BuildContext context) {
     var heightDevice = MediaQuery.of(context).size.height;
+    var widthDevice = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.white,
       drawer: Drawer(),
@@ -376,6 +377,16 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                             hinttext: 'Enter Your Phone Number'),
                       ],
                     )
+                  ],
+                ),
+                Column(
+                  children: [
+                    TextFrom(
+                      heading: 'Message',
+                      width: widthDevice / 1.5,
+                      hinttext: 'Please Enter your Message',
+                      maxline: 10,
+                    ),
                   ],
                 )
               ],
