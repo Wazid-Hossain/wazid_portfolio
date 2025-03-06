@@ -356,6 +356,14 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                             hinttext: 'Enter Your First Name'),
                         SizedBox(height: 10),
                         TextFrom(
+                            heading: 'Your Mail',
+                            width: 350,
+                            hinttext: 'Enter Your Mail'),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        TextFrom(
                             heading: 'Last Name',
                             width: 350,
                             hinttext: 'Enter Your Last Name'),
@@ -363,9 +371,9 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                           height: 10,
                         ),
                         TextFrom(
-                            heading: 'Your Mail',
+                            heading: 'Contact Number',
                             width: 350,
-                            hinttext: 'Enter Your Mail'),
+                            hinttext: 'Enter Your Phone Number'),
                       ],
                     )
                   ],
