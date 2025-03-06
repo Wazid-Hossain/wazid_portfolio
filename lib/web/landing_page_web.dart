@@ -388,7 +388,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                       maxline: 10,
                     ),
                     SizedBox(
-                      height: 25,
+                      height: 10,
                     ),
                     MaterialButton(
                         elevation: 20,
