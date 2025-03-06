@@ -241,6 +241,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                         elevation: 30,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15),
+                          side: BorderSide(color: Colors.tealAccent),
                         ),
                         shadowColor: Colors.tealAccent,
                         child: Column(
@@ -264,6 +265,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                         elevation: 30,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15),
+                          side: BorderSide(color: Colors.tealAccent),
                         ),
                         shadowColor: Colors.tealAccent,
                         child: Column(
@@ -287,6 +289,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                         elevation: 30,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15),
+                          side: BorderSide(color: Colors.tealAccent),
                         ),
                         shadowColor: Colors.tealAccent,
                         child: Column(
@@ -388,7 +391,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                       maxline: 10,
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 15,
                     ),
                     MaterialButton(
                         elevation: 20,
@@ -404,7 +407,10 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                 )
               ],
             ),
-          )
+          ),
+          SizedBox(
+            height: 15,
+          ),
         ],
       ),
     );
