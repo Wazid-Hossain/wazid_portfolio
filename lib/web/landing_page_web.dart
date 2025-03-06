@@ -351,14 +351,21 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                     Column(
                       children: [
                         TextFrom(
-                            heading: 'Your Name',
+                            heading: 'First Name',
                             width: 350,
-                            hinttext: 'Enter Your Name'),
+                            hinttext: 'Enter Your First Name'),
                         SizedBox(height: 10),
+                        TextFrom(
+                            heading: 'Last Name',
+                            width: 350,
+                            hinttext: 'Enter Your Last Name'),
+                        SizedBox(
+                          height: 10,
+                        ),
                         TextFrom(
                             heading: 'Your Mail',
                             width: 350,
-                            hinttext: 'Enter Your Mail')
+                            hinttext: 'Enter Your Mail'),
                       ],
                     )
                   ],
