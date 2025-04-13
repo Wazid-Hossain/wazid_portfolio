@@ -32,7 +32,7 @@ class _TabsWebState extends State<TabsWeb> {
         duration: const Duration(microseconds: 100),
         curve: Curves.elasticIn,
         style: isSelected
-            ? GoogleFonts.oswald(
+            ? GoogleFonts.roboto(
                 shadows: [
                   Shadow(
                     color: Colors.transparent,
