@@ -136,12 +136,12 @@ class TextFrom extends StatelessWidget {
   }
 }
 
-class animetioncardweb extends StatefulWidget {
+class animationforwebcard extends StatefulWidget {
   final imagepath;
   final text;
   final fit;
   final reverse;
-  const animetioncardweb(
+  const animationforwebcard(
       {super.key,
       @required this.imagepath,
       @required this.text,
@@ -149,12 +149,29 @@ class animetioncardweb extends StatefulWidget {
       this.reverse});
 
   @override
-  State<animetioncardweb> createState() => _animetioncardwebState();
+  State<animationforwebcard> createState() => _animationforwebcardState();
 }
 
-class _animetioncardwebState extends State<animetioncardweb> {
+class _animationforwebcardState extends State<animationforwebcard>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller = AnimationController(
+    vsync: this,
+    duration: Duration(seconds: 4),
+  );
+
+  late Animation<Offset> _animation = Tween(
+    begin: widget.reverse == true ? Offset(0, 0.08) : offset.zero,
+    end: widget.reverse == true ? offset.zero : Offset(0, 0.08),
+  ).animate(_controller);
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Placeholder();
   }
 }
