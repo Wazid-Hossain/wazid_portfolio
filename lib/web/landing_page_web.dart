@@ -29,6 +29,18 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                 backgroundColor: Colors.white,
                 backgroundImage: AssetImage('assets/wazid-circle.png'),
               ),
+            ),
+            SizedBox(height: 15),
+            SansBold('Wazid Hossain', 30),
+            SizedBox(height: 15),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Image.asset(
+                  "assets/instagram.png",
+                  width: 35.0,
+                )
+              ],
             )
           ],
         ),
