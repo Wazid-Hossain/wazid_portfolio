@@ -16,7 +16,23 @@ class _LandingPageWebState extends State<LandingPageWeb> {
     var widthDevice = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.white,
-      drawer: Drawer(),
+      drawer: Drawer(
+        backgroundColor: Colors.white,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircleAvatar(
+              radius: 72,
+              backgroundColor: Colors.tealAccent,
+              child: CircleAvatar(
+                radius: 70,
+                backgroundColor: Colors.white,
+                backgroundImage: AssetImage('assets/wazid-circle.png'),
+              ),
+            )
+          ],
+        ),
+      ),
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0.0,
@@ -135,7 +151,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
               children: [
                 Image.asset(
                   'assets/web.jpg',
-                  height: heightDevice / 1.7,
+                  height: widthDevice / 1.9,
                 ),
                 // Expanded is used to take the remaining space and fixed the overflow error
                 Expanded(
