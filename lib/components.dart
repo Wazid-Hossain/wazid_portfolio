@@ -135,3 +135,26 @@ class TextFrom extends StatelessWidget {
     );
   }
 }
+
+class animetioncardweb extends StatefulWidget {
+  final imagepath;
+  final text;
+  final fit;
+  final reverse;
+  const animetioncardweb(
+      {super.key,
+      @required this.imagepath,
+      @required this.text,
+      this.fit,
+      this.reverse});
+
+  @override
+  State<animetioncardweb> createState() => _animetioncardwebState();
+}
+
+class _animetioncardwebState extends State<animetioncardweb> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
