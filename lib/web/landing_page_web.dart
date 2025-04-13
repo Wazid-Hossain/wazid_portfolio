@@ -256,6 +256,8 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                       animationforwebcard(
                         imagepath: "assets/firebase.png",
                         text: 'Backend Devlopment',
+                        fit: BoxFit.contain,
+                        reverse: true,
                       ),
                       /* Firebase card end
                       Flexible(

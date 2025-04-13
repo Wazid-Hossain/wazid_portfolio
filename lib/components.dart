@@ -157,7 +157,7 @@ class _animationforwebcardState extends State<animationforwebcard>
   late AnimationController _controller = AnimationController(
     vsync: this,
     duration: Duration(seconds: 4),
-  )..repeat();
+  )..repeat(reverse: true);
 
   late Animation<Offset> _animation = Tween(
     begin: widget.reverse == true ? Offset(0, 0.08) : Offset.zero,
