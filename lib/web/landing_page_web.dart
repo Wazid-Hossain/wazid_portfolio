@@ -237,103 +237,53 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Card(
-                        elevation: 30,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15),
-                          side: BorderSide(color: Colors.tealAccent),
-                        ),
-                        shadowColor: Colors.tealAccent,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Image.asset(
-                              'assets/webL.png',
-                              height: 200,
-                              width: 200,
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            SansBold('Web Devlopment', 20),
-                          ],
-                        ),
-                      ),
-                      // Web Devlopment card end,
+                      // app Devlopment card,
 
-                      Card(
-                        elevation: 30,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15),
-                          side: BorderSide(color: Colors.tealAccent),
-                        ),
-                        shadowColor: Colors.tealAccent,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Image.asset(
-                              'assets/app.png',
-                              height: 200,
-                              width: 200,
-                              fit: BoxFit.contain,
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            SansBold('App Devlopment', 20),
-                          ],
-                        ),
+                      animationforwebcard(
+                        imagepath: "assets/app.png",
+                        text: 'App Devlopment',
+                        fit: BoxFit.contain,
+                        reverse: true,
                       ),
+
                       // App Devlopment card end
-                      Card(
-                        elevation: 30,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15),
-                          side: BorderSide(color: Colors.tealAccent),
-                        ),
-                        shadowColor: Colors.tealAccent,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Image.asset(
-                              'assets/firebase.png',
-                              height: 200,
-                              width: 200,
-                              fit: BoxFit.contain,
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            SansBold('Back-End Devlopment', 15),
-                          ],
+
+                      // web Devlopment card
+                      animationforwebcard(
+                          imagepath: "assets/webL.png", text: 'Web Devlopment'),
+                      // web Devlopment card end
+                      // Firebase card
+                      animationforwebcard(
+                        imagepath: "assets/firebase.png",
+                        text: 'Backend Devlopment',
+                      ),
+                      /* Firebase card end
+                      Flexible(
+                        child: Card(
+                          elevation: 30,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          shadowColor: Colors.tealAccent,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Image.asset(
+                                'assets/blog.jpg',
+                                height: 200,
+                                width: 200,
+                                fit: BoxFit.contain,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              SansBold('Blog', 20),
+                            ],
+                          ),
                         ),
                       ),
-                      // Firebase card end
-                      // Flexible(
-                      //   child: Card(
-                      //     elevation: 30,
-                      //     shape: RoundedRectangleBorder(
-                      //       borderRadius: BorderRadius.circular(15),
-                      //     ),
-                      //     shadowColor: Colors.tealAccent,
-                      //     child: Column(
-                      //       mainAxisAlignment: MainAxisAlignment.start,
-                      //       children: [
-                      //         Image.asset(
-                      //           'assets/blog.jpg',
-                      //           height: 200,
-                      //           width: 200,
-                      //           fit: BoxFit.contain,
-                      //         ),
-                      //         SizedBox(
-                      //           height: 10,
-                      //         ),
-                      //         SansBold('Blog', 20),
-                      //       ],
-                      //     ),
-                      //   ),
-                      // ),
-                      // end of blog card
+                      end of blog card
+                      */
                       // end of third page
                     ],
                   ),

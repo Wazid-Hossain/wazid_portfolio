@@ -157,11 +157,11 @@ class _animationforwebcardState extends State<animationforwebcard>
   late AnimationController _controller = AnimationController(
     vsync: this,
     duration: Duration(seconds: 4),
-  );
+  )..repeat();
 
   late Animation<Offset> _animation = Tween(
-    begin: widget.reverse == true ? Offset(0, 0.08) : offset.zero,
-    end: widget.reverse == true ? offset.zero : Offset(0, 0.08),
+    begin: widget.reverse == true ? Offset(0, 0.08) : Offset.zero,
+    end: widget.reverse == true ? Offset.zero : Offset(0, 0.08),
   ).animate(_controller);
 
   @override
@@ -172,6 +172,31 @@ class _animationforwebcardState extends State<animationforwebcard>
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SlideTransition(
+      position: _animation,
+      child: Card(
+        elevation: 30,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15),
+          side: BorderSide(color: Colors.tealAccent),
+        ),
+        shadowColor: Colors.tealAccent,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Image.asset(
+              widget.imagepath,
+              height: 200,
+              width: 200,
+              fit: widget.fit == null ? null : widget.fit,
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            SansBold(widget.text, 20),
+          ],
+        ),
+      ),
+    );
   }
 }
