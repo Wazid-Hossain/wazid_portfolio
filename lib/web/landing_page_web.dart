@@ -287,6 +287,12 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                         fit: BoxFit.contain,
                         reverse: true,
                       ),
+                      animationforwebcard(
+                        imagepath: "assets/blog.jpg",
+                        text: 'Bloging',
+                        fit: BoxFit.contain,
+                        // reverse: true,
+                      ),
                       /* Firebase card end
                       Flexible(
                         child: Card(
