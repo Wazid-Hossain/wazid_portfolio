@@ -36,9 +36,14 @@ class _LandingPageWebState extends State<LandingPageWeb> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Image.asset(
-                  "assets/instagram.png",
-                  width: 35.0,
+                IconButton(
+                  onPressed: () {},
+                  icon: Image.asset(
+                    "assets/instagram.png",
+                    width: 35.0,
+                    filterQuality: FilterQuality.high,
+                    color: Colors.black,
+                  ),
                 )
               ],
             )
