@@ -47,7 +47,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                 IconButton(
                   onPressed: () {},
                   icon: Image.asset(
-                    "assets/linkedin.png",
+                    "assets/github.png",
                     width: 35.0,
                     filterQuality: FilterQuality.high,
                   ),
