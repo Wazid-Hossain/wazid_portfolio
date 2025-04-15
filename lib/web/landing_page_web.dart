@@ -11,6 +11,21 @@ class LandingPageWeb extends StatefulWidget {
 }
 
 class _LandingPageWebState extends State<LandingPageWeb> {
+  urlluncher(String imagepath, String url) {
+    return IconButton(
+      onPressed: () async {
+        await launchUrl(
+          Uri.parse(url),
+        );
+      },
+      icon: Image.asset(
+        imagepath,
+        width: 35.0,
+        filterQuality: FilterQuality.high,
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     var heightDevice = MediaQuery.of(context).size.height;
@@ -37,19 +52,14 @@ class _LandingPageWebState extends State<LandingPageWeb> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                IconButton(
-                  onPressed: () async {
-                    await launchUrl(
-                      Uri.parse("https://www.linkedin.com/in/wazid-hossain/"),
-                    );
-                  },
-                  icon: Image.asset(
-                    "assets/linkedin.png",
-                    width: 35.0,
-                    filterQuality: FilterQuality.high,
-                  ),
-                ),
-                IconButton(
+                urlluncher("assets/linkedin.png",
+                    'https://www.linkedin.com/in/wazid-hossain/'),
+                urlluncher(
+                    'assets/github.png', 'https://github.com/Wazid-Hossain/'),
+                urlluncher('assets/instagram.png',
+                    'https://www.instagram.com/wazidhossain96/'),
+
+                /* IconButton(
                   onPressed: () async {
                     await launchUrl(
                       Uri.parse("https://github.com/Wazid-Hossain/"),
@@ -60,7 +70,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                     width: 35.0,
                     filterQuality: FilterQuality.high,
                   ),
-                )
+                ) */
               ],
             )
           ],
