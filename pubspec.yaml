@@ -68,6 +68,8 @@ flutter:
     - assets/firebase.png
     - assets/blog.jpg
     - assets/instagram.png
+    - assets/linkedin.png
+    - assets/github.png
 
 
 
