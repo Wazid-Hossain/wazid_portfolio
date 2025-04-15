@@ -11,6 +11,7 @@ class LandingPageWeb extends StatefulWidget {
 }
 
 class _LandingPageWebState extends State<LandingPageWeb> {
+  // this function is used to lunch the url for social media in drawer
   urlluncher(String imagepath, String url) {
     return IconButton(
       onPressed: () async {
