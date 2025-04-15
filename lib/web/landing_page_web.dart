@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:wazid_p/components.dart';
 
 class LandingPageWeb extends StatefulWidget {
@@ -37,7 +38,11 @@ class _LandingPageWebState extends State<LandingPageWeb> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () async {
+                    await launchUrl(
+                      Uri.parse("https://www.linkedin.com/in/wazid-hossain/"),
+                    );
+                  },
                   icon: Image.asset(
                     "assets/linkedin.png",
                     width: 35.0,
@@ -45,7 +50,11 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                   ),
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () async {
+                    await launchUrl(
+                      Uri.parse("https://github.com/Wazid-Hossain/"),
+                    );
+                  },
                   icon: Image.asset(
                     "assets/github.png",
                     width: 35.0,
