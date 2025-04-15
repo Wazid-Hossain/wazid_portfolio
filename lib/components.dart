@@ -191,7 +191,7 @@ class _animationforwebcardState extends State<animationforwebcard>
               fit: widget.fit == null ? null : widget.fit,
             ),
             SizedBox(
-              height: 10,
+              height: 11,
             ),
             SansBold(widget.text, 20),
           ],
