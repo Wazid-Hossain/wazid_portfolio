@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:wazid_p/components.dart';
+import 'package:wazid_p/main.dart';
 
 class LandingPageWeb extends StatefulWidget {
   const LandingPageWeb({super.key});
@@ -78,13 +79,12 @@ class _LandingPageWebState extends State<LandingPageWeb> {
         ),
       ),
       appBar: AppBar(
-        backgroundColor: Colors.white,
         elevation: 0.0,
         centerTitle: true,
-        iconTheme: IconThemeData(size: 25, color: Colors.black),
+        iconTheme:
+            IconThemeData(size: 25, color: Theme.of(context).iconTheme.color),
         title: Row(
           children: [
-            //for space between text use Spacer();
             Spacer(flex: 3),
             TabsWeb('Home'),
             Spacer(),
@@ -96,6 +96,22 @@ class _LandingPageWebState extends State<LandingPageWeb> {
             Spacer(),
             TabsWeb('Contact'),
             Spacer(),
+            // THEME TOGGLE BUTTON
+            IconButton(
+              icon: Icon(
+                themeNotifier.value == ThemeMode.dark
+                    ? Icons.dark_mode
+                    : Icons.light_mode,
+                color: Theme.of(context).iconTheme.color,
+              ),
+              onPressed: () {
+                setState(() {
+                  themeNotifier.value = themeNotifier.value == ThemeMode.dark
+                      ? ThemeMode.light
+                      : ThemeMode.dark;
+                });
+              },
+            ),
           ],
         ),
       ),
