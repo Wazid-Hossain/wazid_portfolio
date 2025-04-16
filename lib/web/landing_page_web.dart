@@ -309,67 +309,56 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                   SizedBox(
                     height: 20,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  Wrap(
+                    alignment: WrapAlignment.center,
+                    spacing: 20, // horizontal space
+                    runSpacing: 20, // vertical space
                     children: [
-                      // app Devlopment card,
-
                       animationforwebcard(
                         imagepath: "assets/app.png",
-                        text: 'App Devlopment',
+                        text: 'App Development',
                         fit: BoxFit.contain,
                         reverse: true,
                       ),
-
-                      // App Devlopment card end
-
-                      // web Devlopment card
                       animationforwebcard(
-                          imagepath: "assets/webL.png", text: 'Web Devlopment'),
-                      // web Devlopment card end
-                      // Firebase card
+                        imagepath: "assets/webL.png",
+                        text: 'Web Development',
+                      ),
                       animationforwebcard(
                         imagepath: "assets/firebase.png",
-                        text: 'Backend Devlopment',
+                        text: 'Backend Development',
                         fit: BoxFit.contain,
                         reverse: true,
                       ),
                       animationforwebcard(
                         imagepath: "assets/blog.jpg",
-                        text: 'Bloging',
+                        text: 'Blogging',
                         fit: BoxFit.contain,
-                        // reverse: true,
                       ),
-                      /* Firebase card end
-                      Flexible(
-                        child: Card(
-                          elevation: 30,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                          shadowColor: Colors.tealAccent,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Image.asset(
-                                'assets/blog.jpg',
-                                height: 200,
-                                width: 200,
-                                fit: BoxFit.contain,
-                              ),
-                              SizedBox(
-                                height: 10,
-                              ),
-                              SansBold('Blog', 20),
-                            ],
-                          ),
+
+                      // Optionally include your extra card as well
+                      /* Card(
+                        elevation: 30,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15),
                         ),
-                      ),
-                      end of blog card
-                      */
-                      // end of third page
+                        shadowColor: Colors.tealAccent,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Image.asset(
+                              'assets/blog.jpg',
+                              height: 200,
+                              width: 200,
+                              fit: BoxFit.contain,
+                            ),
+                            SizedBox(height: 10),
+                            SansBold('Blog', 20),
+                          ],
+                        ),
+                      ),*/
                     ],
-                  ),
+                  )
                 ],
               ),
             ),
