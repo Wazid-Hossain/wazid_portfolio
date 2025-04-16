@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:wazid_p/components.dart';
 import 'package:wazid_p/main.dart';
@@ -257,7 +256,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                           ),
                           SizedBox(width: 7),
                           Container(
-                            child: Sans('Android', 20),
+                            child: Sans('Android', 22),
                             decoration: BoxDecoration(
                                 border: Border.all(
                                     color: Colors.tealAccent,
