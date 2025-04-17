@@ -219,7 +219,7 @@ class _LandingPageWebState extends State<LandingPageWeb> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SansBold('About Me', 40),
-                      SizedBox(height: 10),
+                      SizedBox(height: 11),
                       Sans(
                           "👋 Hi, I'm Wazid, a passionate Flutter and Web Developer dedicated to building seamless, high-performance applications.",
                           15),
