@@ -2,11 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:wazid_p/mobile/landing_page.dart';
 import 'package:wazid_p/web/landing_page_web.dart';
+import 'package:dynamic_path_url_strategy/dynamic_path_url_strategy.dart';
 
 // Global theme notifier
 final ValueNotifier<ThemeMode> themeNotifier = ValueNotifier(ThemeMode.light);
 
 void main() {
+  // Set URL strategy to PathUrlStrategy
+  // This is important for web applications to handle routing correctly
+  setPathUrlStrategy();
   runApp(const MyApp());
 }
 
