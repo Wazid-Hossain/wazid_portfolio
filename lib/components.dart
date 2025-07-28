@@ -193,7 +193,7 @@ class _animationforwebcardState extends State<animationforwebcard>
             SizedBox(
               height: 11,
             ),
-            SansBold(widget.text, 21),
+            SansBold(widget.text, 20),
           ],
         ),
       ),
